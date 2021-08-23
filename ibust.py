@@ -30,7 +30,7 @@ iiiiiiiiBBBBBBBBBBBBBBBBB       uuuuuuuu  uuuu  sssssssssss              ttttttt
                                                                                       \n"""
     banner += Fore.BLUE + '\tHome made DirBuster in python3\n' + Style.RESET_ALL
     banner += Fore.GREEN + '\tVersion 1.0.\n' + Style.RESET_ALL
-    banner += Fore.WHITE + '\tHosted on TODO: add github url\n\n' + Style.RESET_ALL
+    banner += Fore.WHITE + '\tHosted on https://github.com/iftachFridental/ibust\n\n' + Style.RESET_ALL
     print(banner)
 
 
@@ -72,7 +72,7 @@ def _print_info(message):
 )
 def main(url, port, dictfile, outfile):
     try:
-        _print_banner2()
+        _print_banner()
         
         parsed_url = urllib.parse.urlparse(url)
         scheme = parsed_url.scheme if parsed_url.scheme in ['http', 'https'] else 'https'
